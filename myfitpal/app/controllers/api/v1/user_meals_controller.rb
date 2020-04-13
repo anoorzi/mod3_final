@@ -2,7 +2,8 @@ class Api::V1::UserMealsController < ApplicationController
 
     def index #/api/v1/users
         @user_meals = UserMeal.all
-        render({json: @user_meals, status: :ok})    
+        render({json: @user_meals, status: :ok})  
+        
     end
 
 
