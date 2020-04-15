@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(event){
+
     
     const currentUserid = 1
     const meallist = document.querySelector('div#meallist')
@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function(event){
     let zone = document.querySelector('#meals').value
     let getResultsButton = document.querySelector('#getresult')
     let results = document.querySelector('#results')
+
+    const addMealBtn = document.getElementById('new-meal-btn')
+    let addMeal = false
+    const mealForm = document.querySelector('.container')
 
     let allMeals = []
     let allWorkouts = []
@@ -161,6 +165,52 @@ document.addEventListener('DOMContentLoaded', function(event){
         }
 
     })
+
+    addMealBtn.addEventListener('click', () => {
+        addMeal = !addMeal
+        if(addMeal){
+            mealForm.style.display = 'block'
+            mealForm.addEventListener('submit', event => {
+                event.preventDefault()
+                postMeal(event.target)
+                event.target.reset()
+            })
+        } else {
+            mealForm.style.display = 'none'
+        }
+    })
+
+    function postMeal(meal_data){
+        fetch('http://localhost:3000/api/v1/meals', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                'name': meal_data.name.value,
+                'calories': meal_data.calories.value,
+                'imgurl': meal_data.image.value
+            })
+        })
+        .then(resp => resp.json())
+        .then((obj_meal) => {
+            let zone = document.querySelector('#meals')
+            let div = document.createElement('div')
+            div.className='card'
+            div.innerHTML = `
+                <p class='first'>${obj_meal.name.toUpperCase()}</p>
+                <p class='second'>${obj_meal.calories} per Hour</p>
+                <img src='${obj_meal.imgurl}'>
+                <br>
+                <button data-userworkid="${obj_meal.id}" class='deleteobjwork'>Remove</button>
+                `
+            zone.appendChild(div)
+        })
+
+    }
+
+
 
 
 
@@ -403,7 +453,7 @@ document.addEventListener('DOMContentLoaded', function(event){
     }
     
     
-})
+
 
 
 

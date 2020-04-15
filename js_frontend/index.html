@@ -5,18 +5,34 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <title>JS Project Template</title>
+    <script defer type="text/javascript" src="index.js" charset="utf-8"></script>
 </head>
 
 <body>
-    <header>
-      <h2>Fit Tracker Pro</h2>
-    </header>
+  <header>
+    <h2>Fit Tracker Pro</h2>
+  </header>
     <h1>Meals Selection</h1>
     <select id="meals">
         <option value="breakfast">Breakfast</option>
         <option value="lunch">Lunch</option>
         <option value="dinner">Dinner</option>
-      </select>
+    </select>
+
+    <div class='container'>
+      <form class='add-meal-form'>
+        <h3>Create Meal</h3>
+
+        <input type="text" name="name" value="" placeholder="Enter meal..." class="input-text">
+        <br>
+        <input type="text" name="calories" value="" placeholder="Enter calories..." class="input-text">
+        <br>
+        <input type="text" name="image" value="" placeholder="Enter meal image URL..." class="input-text">
+        <br>
+        <input type="submit" name="submit" value="Create New Meal" class="submit">
+      </form>
+    </div>
+    <p style="text-align:center"> Create New Meal <button id="new-meal-btn">Add a new meal!</button></p>
    
     <div id='meallist'>
     </div>
@@ -53,6 +69,5 @@
 
 
 </body>
-<script type="text/javascript" src="index.js" charset="utf-8"></script>
 
 </html>
