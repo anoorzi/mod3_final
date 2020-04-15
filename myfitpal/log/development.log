@@ -19060,3 +19060,1586 @@ Processing by Api::V1::UserMealsController#index as */*
 Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 916)
 
 
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 13:45:26 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 13:45:26 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 13:45:26 -0400
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 13:45:26 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MealsController#index as */*
+Processing by Api::V1::WorkoutsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+Processing by Api::V1::UserMealsController#index as */*
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.5ms | Allocations: 14135)
+
+
+Completed 200 OK in 22ms (Views: 16.1ms | ActiveRecord: 0.7ms | Allocations: 11411)
+
+
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 1.1ms | Allocations: 17313)
+
+
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.8ms | Allocations: 20307)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 13:45:30 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 13:45:30 -0400
+Processing by Api::V1::UserMealsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1588)
+
+
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 2134)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 13:55:20 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 13:55:20 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MealsController#index as */*
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 0.5ms | Allocations: 2415)
+
+
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.5ms | Allocations: 2605)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 13:55:20 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 899)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 13:55:20 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 13:57:34 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 13:57:34 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.6ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.6ms | Allocations: 1770)
+
+
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.6ms | Allocations: 1119)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 13:57:34 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 899)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 13:57:34 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:10:06 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1076)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:10:06 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1654)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:10:06 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:10:06 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 912)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 897)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:11:20 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:11:20 -0400
+Processing by Api::V1::MealsController#index as */*
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 2398)
+
+
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 2589)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:11:20 -0400
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:11:20 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 886)
+
+
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.6ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.6ms | Allocations: 940)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:13:04 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 1911)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:13:04 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1061)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:13:04 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:13:04 -0400
+Processing by Api::V1::UserMealsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1588)
+
+
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1662)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:19:14 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:19:14 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 1673)
+
+
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 1230)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:19:14 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:19:14 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+Processing by Api::V1::UserWorkoutsController#index as */*
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1043)
+
+
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 1629)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:19:39 -0400
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:19:39 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+Processing by Api::V1::MealsController#index as */*
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 2598)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:19:39 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:19:39 -0400
+Processing by Api::V1::UserMealsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1589)
+
+
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1663)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:20:05 -0400
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:20:05 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 2729)
+
+
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 2213)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:20:05 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:20:05 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1369)
+
+
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 963)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:20:56 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:20:56 -0400
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1791)
+
+
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1061)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:20:57 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:20:57 -0400
+Processing by Api::V1::UserMealsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1619)
+
+
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1682)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:21:32 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:21:32 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+Processing by Api::V1::WorkoutsController#index as */*
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 2560)
+
+
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 2544)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:21:33 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:21:33 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+Processing by Api::V1::UserWorkoutsController#index as */*
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1277)
+
+
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1613)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:21:42 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:21:42 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mWorkout Load (3.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 3.4ms | Allocations: 1912)
+
+
+  [1m[36mMeal Load (3.8ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 3.8ms | Allocations: 3176)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:21:42 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:21:42 -0400
+Processing by Api::V1::UserMealsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1592)
+
+
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1666)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:21:56 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:21:56 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1777)
+
+
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 3115)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:21:56 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:21:56 -0400
+Processing by Api::V1::UserMealsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1012)
+
+
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1662)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:25:38 -0400
+Processing by Api::V1::MealsController#index as */*
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:25:38 -0400
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+Processing by Api::V1::WorkoutsController#index as */*
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 2599)
+
+
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 2581)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:25:39 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:25:39 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1877)
+
+
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1086)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:26:45 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:26:45 -0400
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1069)
+
+
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1654)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:26:46 -0400
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:26:46 -0400
+Processing by Api::V1::UserMealsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1443)
+
+
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1776)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:27:00 -0400
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:27:00 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 2213)
+
+
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 2712)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:27:01 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:27:01 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 867)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:29:49 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1108)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:29:49 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1654)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:29:49 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:29:49 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 867)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:31:17 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:31:17 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1232)
+
+
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3177)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:31:17 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:31:17 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 880)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:32:43 -0400
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:32:43 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1654)
+
+
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 4083)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:32:43 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:32:44 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 867)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:33:33 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 1.1ms | Allocations: 1061)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:33:33 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 1637)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:33:34 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:33:34 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.5ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+Processing by Api::V1::UserWorkoutsController#index as */*
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 1805)
+
+
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1630)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 14:42:55 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 14:42:55 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+Processing by Api::V1::WorkoutsController#index as */*
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 2121)
+
+
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.2ms | Allocations: 2598)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 14:42:55 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 14:42:55 -0400
+Processing by Api::V1::UserMealsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1458)
+
+
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 1812)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:11:41 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:11:41 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+Processing by Api::V1::WorkoutsController#index as */*
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 2588)
+
+
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 2554)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:11:42 -0400
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:11:42 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1652)
+
+
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.3ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 940)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:12:43 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:12:43 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 1677)
+
+
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1061)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:12:43 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:12:43 -0400
+Processing by Api::V1::UserMealsController#index as */*
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1145)
+
+
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 2205)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:18:13 -0400
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:18:13 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 2536)
+
+
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1076)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:18:13 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 899)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:18:13 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.3ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 882)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:30:36 -0400
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:30:36 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MealsController#index as */*
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1652)
+
+
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 2793)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:30:37 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 899)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:30:37 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:31:21 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1659)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:31:21 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 1078)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:31:22 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:31:22 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Processing by Api::V1::UserWorkoutsController#index as */*
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1652)
+
+
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 1450)
+
+
+Started POST "/api/v1/meals" for ::1 at 2020-04-15 16:31:37 -0400
+Processing by Api::V1::MealsController#create as JSON
+  Parameters: {"name"=>"Chipotle Bowl", "calories"=>"1080", "imgurl"=>"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.chipotle.com%2Fnutrition-calculator&psig=AOvVaw2Ny_9AtmRyMzhxrxWyVVct&ust=1587068306306000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjHhZeg6-gCFQAAAAAdAAAAABAD", "meal"=>{"name"=>"Chipotle Bowl", "calories"=>"1080", "imgurl"=>"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.chipotle.com%2Fnutrition-calculator&psig=AOvVaw2Ny_9AtmRyMzhxrxWyVVct&ust=1587068306306000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjHhZeg6-gCFQAAAAAdAAAAABAD"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[36mMeal Create (0.4ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Chipotle Bowl"], ["calories", 1080], ["created_at", "2020-04-15 20:31:37.863477"], ["updated_at", "2020-04-15 20:31:37.863477"], ["imgurl", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.chipotle.com%2Fnutrition-calculator&psig=AOvVaw2Ny_9AtmRyMzhxrxWyVVct&ust=1587068306306000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjHhZeg6-gCFQAAAAAdAAAAABAD"]]
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+Completed 201 Created in 8ms (Views: 0.4ms | ActiveRecord: 1.8ms | Allocations: 2615)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:32:43 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.5ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 1883)
+
+
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:32:43 -0400
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1061)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:32:43 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:32:43 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1561)
+
+
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1597)
+
+
+Started DELETE "/api/v1/user_meals/164" for ::1 at 2020-04-15 16:32:45 -0400
+Processing by Api::V1::UserMealsController#destroy as */*
+  Parameters: {"id"=>"164"}
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals" WHERE "user_meals"."id" = ? LIMIT ?[0m  [["id", 164], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:23:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:24:in `destroy'
+  [1m[36mUserMeal Destroy (2.8ms)[0m  [1m[31mDELETE FROM "user_meals" WHERE "user_meals"."id" = ?[0m  [["id", 164]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:24:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:24:in `destroy'
+Completed 200 OK in 105ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 8208)
+
+
+Started DELETE "/api/v1/user_workouts/35" for ::1 at 2020-04-15 16:32:47 -0400
+Processing by Api::V1::UserWorkoutsController#destroy as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:20:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:21:in `destroy'
+  [1m[36mUserWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_workouts" WHERE "user_workouts"."id" = ?[0m  [["id", 35]]
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:21:in `destroy'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:21:in `destroy'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 2397)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:34:20 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:34:20 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Processing by Api::V1::WorkoutsController#index as */*
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 2580)
+
+
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1589)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:34:20 -0400
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:34:20 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Processing by Api::V1::UserMealsController#index as */*
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1350)
+
+
+Started GET "/meals" for ::1 at 2020-04-15 16:34:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/meals"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/favicon.ico" for ::1 at 2020-04-15 16:34:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/meal" for ::1 at 2020-04-15 16:34:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/meal"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started POST "/api/v1/meals" for ::1 at 2020-04-15 16:36:17 -0400
+Processing by Api::V1::MealsController#create as JSON
+  Parameters: {"name"=>"Chipotle Bowl", "calories"=>"1080", "imgurl"=>"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.chipotle.com%2Fnutrition-calculator&psig=AOvVaw2Ny_9AtmRyMzhxrxWyVVct&ust=1587068306306000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjHhZeg6-gCFQAAAAAdAAAAABAD", "meal"=>{"name"=>"Chipotle Bowl", "calories"=>"1080", "imgurl"=>"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.chipotle.com%2Fnutrition-calculator&psig=AOvVaw2Ny_9AtmRyMzhxrxWyVVct&ust=1587068306306000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjHhZeg6-gCFQAAAAAdAAAAABAD"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[36mMeal Create (0.3ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Chipotle Bowl"], ["calories", 1080], ["created_at", "2020-04-15 20:36:17.803412"], ["updated_at", "2020-04-15 20:36:17.803412"], ["imgurl", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.chipotle.com%2Fnutrition-calculator&psig=AOvVaw2Ny_9AtmRyMzhxrxWyVVct&ust=1587068306306000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjHhZeg6-gCFQAAAAAdAAAAABAD"]]
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+Completed 201 Created in 5ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 2375)
+
+
+Started POST "/api/v1/user_meals" for ::1 at 2020-04-15 16:36:24 -0400
+Processing by Api::V1::UserMealsController#create as JSON
+  Parameters: {"user_id"=>1, "meal_id"=>"7", "typeofmeal"=>"breakfast", "user_meal"=>{"user_id"=>1, "meal_id"=>"7", "typeofmeal"=>"breakfast"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+  [1m[36mUserMeal Create (0.3ms)[0m  [1m[32mINSERT INTO "user_meals" ("user_id", "meal_id", "created_at", "updated_at", "typeofmeal") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["meal_id", 7], ["created_at", "2020-04-15 20:36:24.619807"], ["updated_at", "2020-04-15 20:36:24.619807"], ["typeofmeal", "breakfast"]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+Completed 201 Created in 48ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 15318)
+
+
+Started DELETE "/api/v1/user_meals/167" for ::1 at 2020-04-15 16:37:55 -0400
+Processing by Api::V1::UserMealsController#destroy as */*
+  Parameters: {"id"=>"167"}
+  [1m[36mUserMeal Load (0.5ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals" WHERE "user_meals"."id" = ? LIMIT ?[0m  [["id", 167], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:23:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:24:in `destroy'
+  [1m[36mUserMeal Destroy (0.5ms)[0m  [1m[31mDELETE FROM "user_meals" WHERE "user_meals"."id" = ?[0m  [["id", 167]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:24:in `destroy'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:24:in `destroy'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.5ms | Allocations: 2318)
+
+
+Started POST "/api/v1/meals" for ::1 at 2020-04-15 16:40:08 -0400
+Processing by Api::V1::MealsController#create as JSON
+  Parameters: {"name"=>"Ramen", "calories"=>"550", "imgurl"=>"https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1457910394767-6QQFG3ODIK1U56EO5203/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/image-asset.jpeg?format=1000w", "meal"=>{"name"=>"Ramen", "calories"=>"550", "imgurl"=>"https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1457910394767-6QQFG3ODIK1U56EO5203/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/image-asset.jpeg?format=1000w"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[36mMeal Create (0.4ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ramen"], ["calories", 550], ["created_at", "2020-04-15 20:40:08.974355"], ["updated_at", "2020-04-15 20:40:08.974355"], ["imgurl", "https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1457910394767-6QQFG3ODIK1U56EO5203/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/image-asset.jpeg?format=1000w"]]
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 2316)
+
+
+Started POST "/api/v1/meals" for ::1 at 2020-04-15 16:40:16 -0400
+Processing by Api::V1::MealsController#create as JSON
+  Parameters: {"name"=>"Ramen", "calories"=>"550", "imgurl"=>"https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1457910394767-6QQFG3ODIK1U56EO5203/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/image-asset.jpeg?format=1000w", "meal"=>{"name"=>"Ramen", "calories"=>"550", "imgurl"=>"https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1457910394767-6QQFG3ODIK1U56EO5203/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/image-asset.jpeg?format=1000w"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[36mMeal Create (0.4ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ramen"], ["calories", 550], ["created_at", "2020-04-15 20:40:16.015268"], ["updated_at", "2020-04-15 20:40:16.015268"], ["imgurl", "https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1457910394767-6QQFG3ODIK1U56EO5203/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/image-asset.jpeg?format=1000w"]]
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+Completed 201 Created in 6ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 2300)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:40:18 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:40:18 -0400
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.3ms | Allocations: 2982)
+
+
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1100)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:40:18 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 747)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:40:18 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 743)
+
+
+Started POST "/api/v1/user_meals" for ::1 at 2020-04-15 16:40:26 -0400
+Processing by Api::V1::UserMealsController#create as JSON
+  Parameters: {"user_id"=>1, "meal_id"=>"10", "typeofmeal"=>"breakfast", "user_meal"=>{"user_id"=>1, "meal_id"=>"10", "typeofmeal"=>"breakfast"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+  [1m[36mMeal Load (0.1ms)[0m  [1m[34mSELECT "meals".* FROM "meals" WHERE "meals"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+  [1m[36mUserMeal Create (0.4ms)[0m  [1m[32mINSERT INTO "user_meals" ("user_id", "meal_id", "created_at", "updated_at", "typeofmeal") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["meal_id", 10], ["created_at", "2020-04-15 20:40:26.540036"], ["updated_at", "2020-04-15 20:40:26.540036"], ["typeofmeal", "breakfast"]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:17:in `create'
+Completed 201 Created in 9ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 4292)
+
+
+Started DELETE "/api/v1/user_meals/168" for ::1 at 2020-04-15 16:40:28 -0400
+Processing by Api::V1::UserMealsController#destroy as */*
+  Parameters: {"id"=>"168"}
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals" WHERE "user_meals"."id" = ? LIMIT ?[0m  [["id", 168], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:24:in `destroy'
+  [1m[36mUserMeal Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_meals" WHERE "user_meals"."id" = ?[0m  [["id", 168]]
+  ↳ app/controllers/api/v1/user_meals_controller.rb:24:in `destroy'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:24:in `destroy'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 2299)
+
+
+Started GET "/meals" for ::1 at 2020-04-15 16:41:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/meals"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/users/meals" for ::1 at 2020-04-15 16:41:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/meals"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/user/meals" for ::1 at 2020-04-15 16:41:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/meals"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/users/new" for ::1 at 2020-04-15 16:41:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/users" for ::1 at 2020-04-15 16:41:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/user" for ::1 at 2020-04-15 16:41:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/meal" for ::1 at 2020-04-15 16:41:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/meal"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/meals" for ::1 at 2020-04-15 16:41:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/meals"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "meals"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "meals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "calories" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "imgurl" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_meals"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "user_meals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "meal_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "typeofmeal" varchar)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_workouts"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "user_workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "profilepic" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "workouts"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "calories" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "imgurl" varchar)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200412183904)[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200410225221),
+(20200411221405),
+(20200411222040),
+(20200411224118),
+(20200411224332),
+(20200412055349),
+(20200412060118),
+(20200412060240),
+(20200412060945),
+(20200412061259),
+(20200412183744);
+
+[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-15 20:42:01.987024"], ["updated_at", "2020-04-15 20:42:01.987024"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "f02b4ad9d7f2975304c61fac27026342c54aee69"], ["created_at", "2020-04-15 20:42:01.994575"], ["updated_at", "2020-04-15 20:42:01.994575"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "meals"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "meals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "calories" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "imgurl" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_meals"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "user_meals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "meal_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "typeofmeal" varchar)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_workouts"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "user_workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "profilepic" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "workouts"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "calories" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "imgurl" varchar)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200412183904)[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200410225221),
+(20200411221405),
+(20200411222040),
+(20200411224118),
+(20200411224332),
+(20200412055349),
+(20200412060118),
+(20200412060240),
+(20200412060945),
+(20200412061259),
+(20200412183744);
+
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-15 20:42:02.027322"], ["updated_at", "2020-04-15 20:42:02.027322"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.3ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2020-04-15 20:42:02.033224"], ["key", "environment"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "f02b4ad9d7f2975304c61fac27026342c54aee69"], ["created_at", "2020-04-15 20:42:02.040719"], ["updated_at", "2020-04-15 20:42:02.040719"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  [1m[36mUserMeal Load (0.2ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:42:23 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:42:23 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WorkoutsController#index as */*
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.7ms | Allocations: 3044)
+
+
+Completed 200 OK in 19ms (Views: 10.8ms | ActiveRecord: 1.0ms | Allocations: 5367)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:42:23 -0400
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:42:23 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2806)
+
+
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 3164)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "profilepic", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John"], ["email", "mikey@gmail.com"], ["profilepic", "pic"], ["created_at", "2020-04-15 20:43:04.280402"], ["updated_at", "2020-04-15 20:43:04.280402"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMeal Create (0.3ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "hamburger"], ["calories", 350], ["created_at", "2020-04-15 20:43:04.299484"], ["updated_at", "2020-04-15 20:43:04.299484"], ["imgurl", "https://barbecuebible.com/wp-content/uploads/2013/05/featured-great-american-hamburger.jpg"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMeal Create (0.3ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "chicken wrap"], ["calories", 200], ["created_at", "2020-04-15 20:43:04.304183"], ["updated_at", "2020-04-15 20:43:04.304183"], ["imgurl", "https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/18745-italian-chicken-wraps-600x600.jpg?ext=.jpg"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMeal Create (0.3ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "omlet"], ["calories", 450], ["created_at", "2020-04-15 20:43:04.312448"], ["updated_at", "2020-04-15 20:43:04.312448"], ["imgurl", "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/52/64/99/0SjpEWURRzKZt1avUq9h_omlet.jpg"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMeal Create (0.3ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "bagel"], ["calories", 270], ["created_at", "2020-04-15 20:43:04.316263"], ["updated_at", "2020-04-15 20:43:04.316263"], ["imgurl", "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2018/12/bagels.jpg"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMeal Create (0.3ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "steak"], ["calories", 600], ["created_at", "2020-04-15 20:43:04.320194"], ["updated_at", "2020-04-15 20:43:04.320194"], ["imgurl", "https://i2.wp.com/www.foodrepublic.com/wp-content/uploads/2012/05/testkitchen_argentinesteak.jpg?resize=1280%2C%20560&ssl=1"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMeal Create (0.3ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "pasta"], ["calories", 550], ["created_at", "2020-04-15 20:43:04.324019"], ["updated_at", "2020-04-15 20:43:04.324019"], ["imgurl", "https://www.gimmesomeoven.com/wp-content/uploads/2018/02/Creamy-Rose%CC%81-Pasta-with-Roasted-Tomatoes-1.jpg"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.2ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "running"], ["calories", 400], ["created_at", "2020-04-15 20:43:04.331652"], ["updated_at", "2020-04-15 20:43:04.331652"], ["imgurl", "https://www.runtastic.com/blog/wp-content/uploads/2018/04/thumbnail_8-tips-beginner_1200x800-1024x683.jpg"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWorkout Create (0.3ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "basketball"], ["calories", 600], ["created_at", "2020-04-15 20:43:04.335540"], ["updated_at", "2020-04-15 20:43:04.335540"], ["imgurl", "https://i0.wp.com/basketballsocietyonline.com/wp-content/uploads/2016/07/Obama-Basketball-Pick-up.jpg?resize=550%2C367&ssl=1"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:43:10 -0400
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:43:10 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::WorkoutsController#index as */*
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+Completed 200 OK in 19ms (Views: 12.9ms | ActiveRecord: 0.7ms | Allocations: 8275)
+
+
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.6ms | Allocations: 12195)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:43:10 -0400
+Processing by Api::V1::UserMealsController#index as */*
+  [1m[36mUserMeal Load (0.3ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 2698)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:43:10 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.5ms | Allocations: 1689)
+
+
+Started POST "/api/v1/meals" for ::1 at 2020-04-15 16:43:23 -0400
+Processing by Api::V1::MealsController#create as JSON
+  Parameters: {"name"=>"Ramen", "calories"=>"670", "imgurl"=>"https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1457910394767-6QQFG3ODIK1U56EO5203/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/image-asset.jpeg?format=1000w", "meal"=>{"name"=>"Ramen", "calories"=>"670", "imgurl"=>"https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1457910394767-6QQFG3ODIK1U56EO5203/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/image-asset.jpeg?format=1000w"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[36mMeal Create (0.6ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ramen"], ["calories", 670], ["created_at", "2020-04-15 20:43:23.821570"], ["updated_at", "2020-04-15 20:43:23.821570"], ["imgurl", "https://images.squarespace-cdn.com/content/v1/53cc1616e4b0f4361f8ace24/1457910394767-6QQFG3ODIK1U56EO5203/ke17ZwdGBToddI8pDm48kMR1yAHb8bPoH1-OdajP2rZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpya-Yv2-AUIrtyc_1d9d84jKAfrgH35AgL5HDK7jKFTEAbkVb2mHFRzAaMt_-j0ggg/image-asset.jpeg?format=1000w"]]
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+Completed 201 Created in 14ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 2607)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:43:29 -0400
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:43:29 -0400
+Processing by Api::V1::MealsController#index as */*
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 2494)
+
+
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 2711)
+
+
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:43:29 -0400
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:43:29 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+Processing by Api::V1::UserMealsController#index as */*
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1194)
+
+
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 832)
+
+
+Started GET "/api/v1/meals'" for ::1 at 2020-04-15 16:44:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/meals'"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+rack (2.2.2) lib/rack/handler/webrick.rb:95:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/jc/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:44:05 -0400
+Processing by Api::V1::MealsController#index as HTML
+  [1m[36mMeal Load (0.2ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1834)
+
+
+Started POST "/api/v1/meals" for ::1 at 2020-04-15 16:46:45 -0400
+Processing by Api::V1::MealsController#create as JSON
+  Parameters: {"name"=>"Chipotle Bowl", "calories"=>"1080", "imgurl"=>"https://www.foodbusinessnews.net/ext/resources/2020/1/ChipotleLifestyleBowlsNew_Lead.jpg?1577976217", "meal"=>{"name"=>"Chipotle Bowl", "calories"=>"1080", "imgurl"=>"https://www.foodbusinessnews.net/ext/resources/2020/1/ChipotleLifestyleBowlsNew_Lead.jpg?1577976217"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[36mMeal Create (0.6ms)[0m  [1m[32mINSERT INTO "meals" ("name", "calories", "created_at", "updated_at", "imgurl") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Chipotle Bowl"], ["calories", 1080], ["created_at", "2020-04-15 20:46:45.892066"], ["updated_at", "2020-04-15 20:46:45.892066"], ["imgurl", "https://www.foodbusinessnews.net/ext/resources/2020/1/ChipotleLifestyleBowlsNew_Lead.jpg?1577976217"]]
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/meals_controller.rb:15:in `create'
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 2341)
+
+
+Started GET "/api/v1/meals" for ::1 at 2020-04-15 16:46:52 -0400
+Processing by Api::V1::MealsController#index as */*
+  [1m[36mMeal Load (0.3ms)[0m  [1m[34mSELECT "meals".* FROM "meals"[0m
+Started GET "/api/v1/workouts" for ::1 at 2020-04-15 16:46:52 -0400
+  ↳ app/controllers/api/v1/meals_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 1950)
+
+
+Processing by Api::V1::WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/api/v1/workouts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 1156)
+
+
+Started GET "/api/v1/user_workouts" for ::1 at 2020-04-15 16:46:53 -0400
+Started GET "/api/v1/user_meals" for ::1 at 2020-04-15 16:46:53 -0400
+Processing by Api::V1::UserWorkoutsController#index as */*
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/api/v1/user_workouts_controller.rb:4:in `index'
+Processing by Api::V1::UserMealsController#index as */*
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1513)
+
+
+  [1m[36mUserMeal Load (0.1ms)[0m  [1m[34mSELECT "user_meals".* FROM "user_meals"[0m
+  ↳ app/controllers/api/v1/user_meals_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 1311)
+
+
