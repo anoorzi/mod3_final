@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function(event){
     const area = document.querySelector('div#area')
     let zone = document.querySelector('#meals').value
     let getResultsButton = document.querySelector('#getresult')
+    let results = document.querySelector('#results')
 
     let allMeals = []
     let allWorkouts = []
@@ -30,10 +31,23 @@ document.addEventListener('DOMContentLoaded', function(event){
     
     getResultsButton.addEventListener('click',function(event){
         totalintake = 0
+        totalburn = 0
         totalCalories()
+        totalWorkout()
+
         setTimeout(function(){ 
-        
-            console.log(totalintake)
+            
+            let newDiv = document.createElement('div')
+
+            newDiv.innerHTML = `
+                <p>Your total Intake for the day is ${totalintake}</p>
+                <p>Your total amount of burned calories for the day is ${totalburn}</p>
+                <p>your goal for the day is 2400</p>
+
+
+            `
+            results.appendChild(newDiv)
+
         
         }, 300);
 
@@ -128,8 +142,8 @@ document.addEventListener('DOMContentLoaded', function(event){
                             <p class='second'>${ele.calories} per Hour</p>
                             <img src='${ele.imgurl}'>
                             <br>
-                            <button data-usermealid="${data.id}" class='deleteobj'>Remove</button>
-                        `
+                            <button data-userworkid="${data.id}" class='deleteobjwork'>Remove</button>
+                            `
                         zone.appendChild(div)
 
 
@@ -358,6 +372,34 @@ document.addEventListener('DOMContentLoaded', function(event){
         })
 
         
+    }
+
+    function totalWorkout(){
+        fetch('http://localhost:3000/api/v1/user_workouts')
+        .then(resp => resp.json())
+        .then(function(data){
+
+            
+            data.forEach(function(ele){
+
+                allWorkouts.forEach(function(workout){
+                        
+
+                    if(ele.workout_id===workout.id){
+    
+                        totalburn += parseInt(workout.calories)
+                          
+    
+    
+                    }
+                    
+                })
+
+            })
+
+
+        })
+
     }
     
     
