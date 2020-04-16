@@ -4,12 +4,12 @@
 
 
 # User.destroy_all
-# Meal.destroy_all
+Meal.destroy_all
 Workout.destroy_all
 UserWorkout.destroy_all
 UserMeal.destroy_all
 
-User.create(name:"John",email: "mikey@gmail.com",profilepic: "pic")
+# User.create(name:"John",email: "mikey@gmail.com",profilepic: "pic")
 
 Meal.create(name:"hamburger",calories: "350", imgurl:'https://barbecuebible.com/wp-content/uploads/2013/05/featured-great-american-hamburger.jpg')
 Meal.create(name:"chicken wrap",calories: "200", imgurl: 'https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/18745-italian-chicken-wraps-600x600.jpg?ext=.jpg')

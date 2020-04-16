@@ -215,14 +215,13 @@
         })
         .then(resp => resp.json())
         .then((obj_workout) => {
-            let list = document.querySelector('div#workoutlist')
-            let ul = document.createElement('ul')
+            let ul = document.querySelector('div#workoutlist ul')
             allWorkouts.push(obj_workout)
             let li = document.createElement('li')
             li.innerHTML = `
-            <p class='name'>${ele.name.toUpperCase()} </p>
-            <p class='calories'>${ele.calories} Calories per Hour</p>
-            <button data-workoutid="${ele.id}" class="userworkout">Add To Cart</button>
+            <p class='name'>${obj_workout.name.toUpperCase()} </p>
+            <p class='calories'>${obj_workout.calories} Calories per Hour</p>
+            <button data-workoutid="${obj_workout.id}" class="userworkout">Add To Cart</button>
             
         `  
         ul.appendChild(li)
@@ -243,18 +242,19 @@
             })
         })
         .then(resp => resp.json())
-        .then((obj_meal) => {
-            let zone = document.querySelector('#meals')
-            let div = document.createElement('div')
-            div.className='card'
-            div.innerHTML = `
-                <p class='first'>${obj_meal.name.toUpperCase()}</p>
-                <p class='second'>${obj_meal.calories} per Hour</p>
-                <img src='${obj_meal.imgurl}'>
-                <br>
-                <button data-userworkid="${obj_meal.id}" class='deleteobjwork'>Remove</button>
-                `
-            zone.appendChild(div)
+        .then(function (obj_meal){
+            allMeals.push(obj_meal)
+
+            let ul = document.querySelector('div#meallist ul')
+
+             let li = document.createElement('li')
+             li.innerHTML =  `
+             <p class='name'>${obj_meal.name.toUpperCase()} </p>
+             <p class='calories'>${obj_meal.calories} Calories per Serving</p>
+             <button data-mealid="${obj_meal.id}" class='mealcart'>Add To Cart</button>
+             
+              `  
+             ul.appendChild(li)
         })
 
     }
