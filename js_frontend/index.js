@@ -11,7 +11,11 @@
 
     const addMealBtn = document.getElementById('new-meal-btn')
     let addMeal = false
-    const mealForm = document.querySelector('.container')
+    const mealForm = document.querySelector('.meal-container')
+
+    const addWorkoutBtn = document.getElementById('new-workout-btn')
+    let addWorkout = false
+    const workoutForm = document.querySelector('.workout-container')
 
     let allMeals = []
     let allWorkouts = []
@@ -179,6 +183,49 @@
             mealForm.style.display = 'none'
         }
     })
+
+    addWorkoutBtn.addEventListener('click', () => {
+        addWorkout = !addWorkout
+        if(addWorkout){
+            workoutForm.style.display = 'block'
+            workoutForm.addEventListener('submit', event => {
+                event.preventDefault()
+                postWorkout(event.target)
+                event.target.reset()
+            })
+        } else {
+            workoutForm.style.display = 'none'
+        }
+    })
+
+    function postWorkout(workout_data){
+        fetch('http://localhost:3000/api/v1/workouts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                'name': workout_data.name.value,
+                'calories': workout_data.calories.value,
+                'imgurl': workout_data.image.value
+            })
+        })
+        .then(resp => resp.json())
+        .then((obj_workout) => {
+            let list = document.querySelector('div#workoutlist')
+            let ul = document.createElement('ul')
+            allWorkouts.push(obj_workout)
+            let li = document.createElement('li')
+            li.innerHTML = `
+            <p class='name'>${ele.name.toUpperCase()} </p>
+            <p class='calories'>${ele.calories} Calories per Hour</p>
+            <button data-workoutid="${ele.id}" class="userworkout">Add To Cart</button>
+            
+        `  
+        ul.appendChild(li)
+        })
+    }
 
     function postMeal(meal_data){
         fetch('http://localhost:3000/api/v1/meals', {

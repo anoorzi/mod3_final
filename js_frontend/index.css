@@ -9,15 +9,18 @@ body {
   }
   
   header {
-    background-color: #4caf50;
+    height: 30 px;
+    width: 229 px;
+    background-color: #ffffff;
     margin: 0 auto;
     height: 80px;
   }
+
   
   header h2 {
     padding: 10px;
     margin: 0;
-    font-family: fantasy;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     font-size: 50px;
   }
@@ -70,7 +73,7 @@ body {
 
   }
 
-  div.container {
+  div.meal-container {
     padding: 1rem;
     width: stretch;
     height: auto;
@@ -80,6 +83,19 @@ body {
   }
 
   .add-meal-form {
+    width: 80%
+  }
+
+  div.workout-container {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    display: none;
+    background: #4caf50;
+    opacity: .8;
+  }
+
+  .add-workout-form {
     width: 80%
   }
 

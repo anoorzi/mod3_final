@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
-    <title>JS Project Template</title>
+    <title>Fit Tracker Pro</title>
     <script defer type="text/javascript" src="index.js" charset="utf-8"></script>
 </head>
 
@@ -19,7 +19,7 @@
         <option value="dinner">Dinner</option>
     </select>
 
-    <div class='container'>
+    <div class='meal-container'>
       <form class='add-meal-form'>
         <h3>Create Meal</h3>
 
@@ -38,6 +38,22 @@
     </div>
   
     <h1>Workouts Selection</h1>
+
+    <div class='workout-container'>
+      <form class='add-workout-form'>
+        <h3>Create Workout</h3>
+
+        <input type="text" name="name" value="" placeholder="Enter workout..." class="input-text">
+        <br>
+        <input type="text" name="calories" value="" placeholder="Enter calories..." class="input-text">
+        <br>
+        <input type="text" name="image" value="" placeholder="Enter meal image URL..." class="input-text">
+        <br>
+        <input type="submit" name="submit" value="Create New Workout" class="submit">
+      </form>
+    </div>
+    <p style="text-align:center"> Create New Workout <button id="new-workout-btn">Add a new workout!</button></p>
+
     <div id='workoutlist'>
     </div>
     
