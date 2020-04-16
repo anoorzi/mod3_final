@@ -2,6 +2,8 @@
 body {
     margin: 0;
     padding: 0;
+    background: url('https://actionjacksonfitness.com/wp-content/uploads/2016/10/bare-knuckle-boxer.jpg');
+    
   }
   img{
       width: 165px;
@@ -9,22 +11,34 @@ body {
   }
   
   header {
-    height: 30 px;
+    height: 100 px;
     width: 229 px;
-    background-color: #ffffff;
+    color: white;
+    background-color: black;
     margin: 0 auto;
-    height: 80px;
+    height: 120px;
   }
 
   
   header h2 {
     padding: 10px;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: fantasy;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 100px;
   }
-  
+  .label {
+    color: white;
+    font-size: 30px;
+    background-color: red;
+    border-radius: 25px;
+
+  }
+  .label2 {
+    color: white;
+    font-size: 30px;
+
+  }
   div#breakfast {
     display: grid;
     grid-template-columns: 1fr;
@@ -64,7 +78,7 @@ body {
   h1{
       font-family: monospace;
       text-align: center;
-      font-size: 30px;
+      font-size: 50px;
       background-color: turquoise;
       margin-left: 200px;
       margin-right: 200px;
@@ -74,12 +88,17 @@ body {
   }
 
   div.meal-container {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
     padding: 1rem;
     width: stretch;
     height: auto;
     display: none;
     background: #4caf50;
-    opacity: .8;
+    opacity: .7;
+    border-radius: 15px;
+
   }
 
   .add-meal-form {
@@ -87,12 +106,16 @@ body {
   }
 
   div.workout-container {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
     padding: 1rem;
     width: stretch;
     height: auto;
     display: none;
     background: #4caf50;
-    opacity: .8;
+    opacity: .7;
+    border-radius: 15px;
   }
 
   .add-workout-form {
@@ -113,6 +136,7 @@ body {
       margin-left: 220px;
       margin-right: 220px;
       list-style: none;
+      opacity: .7;
 
   }
 
@@ -142,11 +166,50 @@ body {
       margin-left: 200px;
   }
 
-  button#getresults{
+  #getresults{
       text-align: center;
   }
 
+  form{
+    padding-left: 90px;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    font: 40px;
+    font-family: monospace;
 
+  }
+
+  form input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid  white;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 28px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+
+}
+form input[type=submit]{
+  background: red;
+  border-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 15px;
+
+
+}
+form input[type=submit]:hover{
+  background-color: green;
+  cursor: pointer;
+}
   
 
 
