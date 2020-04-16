@@ -45,16 +45,18 @@
 
         setTimeout(function(){ 
             
-            let newDiv = document.createElement('div')
+            results.id = "resultslist"
 
-            newDiv.innerHTML = `
+            results.innerHTML = `
                 <p>Your total Intake for the day is ${totalintake}</p>
                 <p>Your total amount of burned calories for the day is ${totalburn}</p>
-                <p>your goal for the day is 2400</p>
+                <p>Your goal for the day is 1900 Calories</p>
+                <p>You have ${1900-(totalintake-totalburn)} Calories left for the day</p>
+
+
 
 
             `
-            results.appendChild(newDiv)
 
         
         }, 300);
